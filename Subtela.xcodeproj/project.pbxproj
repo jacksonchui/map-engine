@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A2B857C7EDD284E1B8B882D /* Pods_Subtela.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6EAAB587D5873FAC1AE73B /* Pods_Subtela.framework */; };
+		CF6904D82280DD51008B4340 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904CD2280DD50008B4340 /* Random.swift */; };
+		CF6904D92280DD51008B4340 /* MapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904CE2280DD50008B4340 /* MapEditor.swift */; };
+		CF6904DA2280DD51008B4340 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904CF2280DD50008B4340 /* Room.swift */; };
+		CF6904DB2280DD51008B4340 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904D02280DD50008B4340 /* Graph.swift */; };
+		CF6904DC2280DD51008B4340 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904D12280DD50008B4340 /* Tools.swift */; };
+		CF6904DD2280DD51008B4340 /* Hallway.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904D22280DD50008B4340 /* Hallway.swift */; };
+		CF6904DE2280DD51008B4340 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904D32280DD50008B4340 /* Position.swift */; };
+		CF6904DF2280DD51008B4340 /* SpecialTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904D42280DD50008B4340 /* SpecialTile.swift */; };
+		CF6904E02280DD51008B4340 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904D52280DD50008B4340 /* Square.swift */; };
+		CF6904E12280DD51008B4340 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904D62280DD50008B4340 /* Character.swift */; };
+		CF6904E22280DD51008B4340 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904D72280DD50008B4340 /* Map.swift */; };
+		CF6904E42280DD61008B4340 /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904E32280DD61008B4340 /* Controls.swift */; };
+		CF6904E72280DD70008B4340 /* ARController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904E52280DD70008B4340 /* ARController+Actions.swift */; };
+		CF6904E82280DD70008B4340 /* ARController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6904E62280DD70008B4340 /* ARController.swift */; };
+		CF76A36C227BD31100719C91 /* DungeonConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76A36B227BD31100719C91 /* DungeonConfiguration.swift */; };
+		CF76A431227BF4C500719C91 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76A430227BF4C500719C91 /* SettingsTableViewController.swift */; };
+		CF76A44C227BF69400719C91 /* UIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76A44B227BF69400719C91 /* UIElements.swift */; };
+		CFA4A106227F44E4004311FE /* _SettingsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA4A105227F44E4004311FE /* _SettingsOptions.swift */; };
+		CFA4A111227FA6CE004311FE /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA4A110227FA6CE004311FE /* GameState.swift */; };
+		CFA4A117227FBE59004311FE /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA4A116227FBE59004311FE /* FeedTableViewCell.swift */; };
+		CFBF64B0226E57DC00115845 /* ExploreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF64AF226E57DC00115845 /* ExploreTableViewController.swift */; };
+		CFBF64B4226E685800115845 /* _*Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF64B3226E685800115845 /* _*Item.swift */; };
+		CFBF64B8226E690900115845 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF64B7226E690900115845 /* Score.swift */; };
+		CFD2D0DE226E4AB600B0BCF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD2D0DD226E4AB600B0BCF9 /* AppDelegate.swift */; };
+		CFD2D0E3226E4AB600B0BCF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD2D0E1226E4AB600B0BCF9 /* Main.storyboard */; settings = {ASSET_TAGS = (0, ); }; };
+		CFD2D0E5226E4AB700B0BCF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD2D0E4226E4AB700B0BCF9 /* Assets.xcassets */; };
+		CFD2D0E8226E4AB700B0BCF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD2D0E6226E4AB700B0BCF9 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF76A42A227BDBD900719C91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF76A425227BDBD900719C91 /* map-engine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7F6BA6F52256CED600C5A161;
+			remoteInfo = "map-engine";
+		};
+		CF76A42C227BDBD900719C91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF76A425227BDBD900719C91 /* map-engine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7F6BA7092256CED900C5A161;
+			remoteInfo = "map-engineTests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FE2196BE0E9479F2DD58E11 /* Pods-Subtela.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subtela.release.xcconfig"; path = "Target Support Files/Pods-Subtela/Pods-Subtela.release.xcconfig"; sourceTree = "<group>"; };
+		388CA60D5E6F773EF99A2BAC /* Pods-DungeonSettings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DungeonSettings.release.xcconfig"; path = "Target Support Files/Pods-DungeonSettings/Pods-DungeonSettings.release.xcconfig"; sourceTree = "<group>"; };
+		671AA8897E083AA08CC2DCEA /* Pods-DungeonSettings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DungeonSettings.debug.xcconfig"; path = "Target Support Files/Pods-DungeonSettings/Pods-DungeonSettings.debug.xcconfig"; sourceTree = "<group>"; };
+		6D0BF866778D2E9D74CB6E26 /* Pods-Subtela.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subtela.debug.xcconfig"; path = "Target Support Files/Pods-Subtela/Pods-Subtela.debug.xcconfig"; sourceTree = "<group>"; };
+		9C762E8583B3A260C5E2FD0C /* Pods_DungeonSettings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DungeonSettings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6904CD2280DD50008B4340 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		CF6904CE2280DD50008B4340 /* MapEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapEditor.swift; sourceTree = "<group>"; };
+		CF6904CF2280DD50008B4340 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		CF6904D02280DD50008B4340 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		CF6904D12280DD50008B4340 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		CF6904D22280DD50008B4340 /* Hallway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hallway.swift; sourceTree = "<group>"; };
+		CF6904D32280DD50008B4340 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		CF6904D42280DD50008B4340 /* SpecialTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpecialTile.swift; path = "../../../../../Downloads/map-engine-master/map-engine/map-engine/Model/SpecialTile.swift"; sourceTree = "<group>"; };
+		CF6904D52280DD50008B4340 /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Square.swift; path = "../../../../../Downloads/map-engine-master/map-engine/map-engine/Model/Square.swift"; sourceTree = "<group>"; };
+		CF6904D62280DD50008B4340 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = "../../../../../Downloads/map-engine-master/map-engine/map-engine/Model/Character.swift"; sourceTree = "<group>"; };
+		CF6904D72280DD50008B4340 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Map.swift; path = "../../../../../Downloads/map-engine-master/map-engine/map-engine/Model/Map.swift"; sourceTree = "<group>"; };
+		CF6904E32280DD61008B4340 /* Controls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Controls.swift; path = "../../../../../Downloads/map-engine-master/map-engine/map-engine/View/Controls.swift"; sourceTree = "<group>"; };
+		CF6904E52280DD70008B4340 /* ARController+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ARController+Actions.swift"; path = "../../../../../Downloads/map-engine-master/map-engine/map-engine/Controller/ARController+Actions.swift"; sourceTree = "<group>"; };
+		CF6904E62280DD70008B4340 /* ARController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARController.swift; path = "../../../../../Downloads/map-engine-master/map-engine/map-engine/Controller/ARController.swift"; sourceTree = "<group>"; };
+		CF6EAAB587D5873FAC1AE73B /* Pods_Subtela.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Subtela.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF76A36B227BD31100719C91 /* DungeonConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonConfiguration.swift; sourceTree = "<group>"; };
+		CF76A425227BDBD900719C91 /* map-engine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "map-engine.xcodeproj"; path = "../map-engine/map-engine.xcodeproj"; sourceTree = "<group>"; };
+		CF76A430227BF4C500719C91 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		CF76A44B227BF69400719C91 /* UIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElements.swift; sourceTree = "<group>"; };
+		CFA4A105227F44E4004311FE /* _SettingsOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _SettingsOptions.swift; sourceTree = "<group>"; };
+		CFA4A110227FA6CE004311FE /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameState.swift; path = ../../../../../.Trash/GameState.swift; sourceTree = "<group>"; };
+		CFA4A116227FBE59004311FE /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		CFBF64AF226E57DC00115845 /* ExploreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewController.swift; sourceTree = "<group>"; };
+		CFBF64B3226E685800115845 /* _*Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_*Item.swift"; sourceTree = "<group>"; };
+		CFBF64B7226E690900115845 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		CFD2D0DA226E4AB600B0BCF9 /* Subtela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subtela.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD2D0DD226E4AB600B0BCF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFD2D0E2226E4AB600B0BCF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFD2D0E4226E4AB700B0BCF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFD2D0E7226E4AB700B0BCF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFD2D0E9226E4AB700B0BCF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFD2D0D7226E4AB600B0BCF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2B857C7EDD284E1B8B882D /* Pods_Subtela.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79980E4D35A8F5D3512EC89D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				671AA8897E083AA08CC2DCEA /* Pods-DungeonSettings.debug.xcconfig */,
+				388CA60D5E6F773EF99A2BAC /* Pods-DungeonSettings.release.xcconfig */,
+				6D0BF866778D2E9D74CB6E26 /* Pods-Subtela.debug.xcconfig */,
+				2FE2196BE0E9479F2DD58E11 /* Pods-Subtela.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C3F09486437BAFC4CD9A197C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF76A425227BDBD900719C91 /* map-engine.xcodeproj */,
+				9C762E8583B3A260C5E2FD0C /* Pods_DungeonSettings.framework */,
+				CF6EAAB587D5873FAC1AE73B /* Pods_Subtela.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF6904CC2280DD50008B4340 /* mapgen */ = {
+			isa = PBXGroup;
+			children = (
+				CF6904CD2280DD50008B4340 /* Random.swift */,
+				CF6904CE2280DD50008B4340 /* MapEditor.swift */,
+				CF6904CF2280DD50008B4340 /* Room.swift */,
+				CF6904D02280DD50008B4340 /* Graph.swift */,
+				CF6904D12280DD50008B4340 /* Tools.swift */,
+				CF6904D22280DD50008B4340 /* Hallway.swift */,
+				CF6904D32280DD50008B4340 /* Position.swift */,
+			);
+			name = mapgen;
+			path = "../../../../../Downloads/map-engine-master/map-engine/map-engine/Model/mapgen";
+			sourceTree = "<group>";
+		};
+		CF76A426227BDBD900719C91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF76A42B227BDBD900719C91 /* map-engine.app */,
+				CF76A42D227BDBD900719C91 /* map-engineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFD2D0D1226E4AB600B0BCF9 = {
+			isa = PBXGroup;
+			children = (
+				CFD2D0DC226E4AB600B0BCF9 /* Subtela */,
+				CFD2D0DB226E4AB600B0BCF9 /* Products */,
+				79980E4D35A8F5D3512EC89D /* Pods */,
+				C3F09486437BAFC4CD9A197C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFD2D0DB226E4AB600B0BCF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFD2D0DA226E4AB600B0BCF9 /* Subtela.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFD2D0DC226E4AB600B0BCF9 /* Subtela */ = {
+			isa = PBXGroup;
+			children = (
+				CFD2D0F3226E52A200B0BCF9 /* Controller */,
+				CFD2D0F2226E529800B0BCF9 /* View */,
+				CFD2D0F1226E529300B0BCF9 /* Model */,
+				CFD2D0DD226E4AB600B0BCF9 /* AppDelegate.swift */,
+				CFD2D0E4226E4AB700B0BCF9 /* Assets.xcassets */,
+				CFD2D0E9226E4AB700B0BCF9 /* Info.plist */,
+			);
+			path = Subtela;
+			sourceTree = "<group>";
+		};
+		CFD2D0F1226E529300B0BCF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF6904D52280DD50008B4340 /* Square.swift */,
+				CF6904CC2280DD50008B4340 /* mapgen */,
+				CF6904D72280DD50008B4340 /* Map.swift */,
+				CF6904D62280DD50008B4340 /* Character.swift */,
+				CF6904D42280DD50008B4340 /* SpecialTile.swift */,
+				CFBF64B7226E690900115845 /* Score.swift */,
+				CF76A36B227BD31100719C91 /* DungeonConfiguration.swift */,
+				CFA4A110227FA6CE004311FE /* GameState.swift */,
+				CFA4A105227F44E4004311FE /* _SettingsOptions.swift */,
+				CFBF64B3226E685800115845 /* _*Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFD2D0F2226E529800B0BCF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFD2D0E1226E4AB600B0BCF9 /* Main.storyboard */,
+				CFD2D0E6226E4AB700B0BCF9 /* LaunchScreen.storyboard */,
+				CF6904E32280DD61008B4340 /* Controls.swift */,
+				CF76A44B227BF69400719C91 /* UIElements.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFD2D0F3226E52A200B0BCF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF6904E62280DD70008B4340 /* ARController.swift */,
+				CF6904E52280DD70008B4340 /* ARController+Actions.swift */,
+				CFBF64AF226E57DC00115845 /* ExploreTableViewController.swift */,
+				CF76A430227BF4C500719C91 /* SettingsTableViewController.swift */,
+				CFA4A116227FBE59004311FE /* FeedTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFD2D0D9226E4AB600B0BCF9 /* Subtela */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD2D0EC226E4AB700B0BCF9 /* Build configuration list for PBXNativeTarget "Subtela" */;
+			buildPhases = (
+				05865C936BDE20C45F2F8836 /* [CP] Check Pods Manifest.lock */,
+				CFD2D0D6226E4AB600B0BCF9 /* Sources */,
+				CFD2D0D7226E4AB600B0BCF9 /* Frameworks */,
+				CFD2D0D8226E4AB600B0BCF9 /* Resources */,
+				197528D4B491F4799A13CE6A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Subtela;
+			productName = DungeonSettings;
+			productReference = CFD2D0DA226E4AB600B0BCF9 /* Subtela.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFD2D0D2226E4AB600B0BCF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					0,
+				);
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Jackson;
+				TargetAttributes = {
+					CFD2D0D9226E4AB600B0BCF9 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = CFD2D0D5226E4AB600B0BCF9 /* Build configuration list for PBXProject "Subtela" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFD2D0D1226E4AB600B0BCF9;
+			productRefGroup = CFD2D0DB226E4AB600B0BCF9 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CF76A426227BDBD900719C91 /* Products */;
+					ProjectRef = CF76A425227BDBD900719C91 /* map-engine.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				CFD2D0D9226E4AB600B0BCF9 /* Subtela */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CF76A42B227BDBD900719C91 /* map-engine.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "map-engine.app";
+			remoteRef = CF76A42A227BDBD900719C91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CF76A42D227BDBD900719C91 /* map-engineTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "map-engineTests.xctest";
+			remoteRef = CF76A42C227BDBD900719C91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFD2D0D8226E4AB600B0BCF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD2D0E8226E4AB700B0BCF9 /* LaunchScreen.storyboard in Resources */,
+				CFD2D0E5226E4AB700B0BCF9 /* Assets.xcassets in Resources */,
+				CFD2D0E3226E4AB600B0BCF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05865C936BDE20C45F2F8836 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Subtela-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		197528D4B491F4799A13CE6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Subtela/Pods-Subtela-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BulletinBoard/BLTNBoard.framework",
+				"${BUILT_PRODUCTS_DIR}/Instructions/Instructions.framework",
+				"${BUILT_PRODUCTS_DIR}/PKRevealController/PKRevealController.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Timepiece/Timepiece.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BLTNBoard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instructions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKRevealController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Timepiece.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Subtela/Pods-Subtela-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFD2D0D6226E4AB600B0BCF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6904E02280DD51008B4340 /* Square.swift in Sources */,
+				CFA4A117227FBE59004311FE /* FeedTableViewCell.swift in Sources */,
+				CF6904DD2280DD51008B4340 /* Hallway.swift in Sources */,
+				CFA4A106227F44E4004311FE /* _SettingsOptions.swift in Sources */,
+				CF6904E82280DD70008B4340 /* ARController.swift in Sources */,
+				CF6904E42280DD61008B4340 /* Controls.swift in Sources */,
+				CF6904DA2280DD51008B4340 /* Room.swift in Sources */,
+				CF6904E72280DD70008B4340 /* ARController+Actions.swift in Sources */,
+				CFBF64B8226E690900115845 /* Score.swift in Sources */,
+				CFBF64B0226E57DC00115845 /* ExploreTableViewController.swift in Sources */,
+				CF76A431227BF4C500719C91 /* SettingsTableViewController.swift in Sources */,
+				CF6904E12280DD51008B4340 /* Character.swift in Sources */,
+				CF6904DE2280DD51008B4340 /* Position.swift in Sources */,
+				CF6904DC2280DD51008B4340 /* Tools.swift in Sources */,
+				CFBF64B4226E685800115845 /* _*Item.swift in Sources */,
+				CFD2D0DE226E4AB600B0BCF9 /* AppDelegate.swift in Sources */,
+				CF6904DB2280DD51008B4340 /* Graph.swift in Sources */,
+				CF6904D82280DD51008B4340 /* Random.swift in Sources */,
+				CF6904D92280DD51008B4340 /* MapEditor.swift in Sources */,
+				CF76A44C227BF69400719C91 /* UIElements.swift in Sources */,
+				CF6904E22280DD51008B4340 /* Map.swift in Sources */,
+				CFA4A111227FA6CE004311FE /* GameState.swift in Sources */,
+				CF6904DF2280DD51008B4340 /* SpecialTile.swift in Sources */,
+				CF76A36C227BD31100719C91 /* DungeonConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CFD2D0E1226E4AB600B0BCF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFD2D0E2226E4AB600B0BCF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFD2D0E6226E4AB700B0BCF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFD2D0E7226E4AB700B0BCF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFD2D0EA226E4AB700B0BCF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFD2D0EB226E4AB700B0BCF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFD2D0ED226E4AB700B0BCF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D0BF866778D2E9D74CB6E26 /* Pods-Subtela.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VMTSCVT295;
+				INFOPLIST_FILE = Subtela/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacksonchui.Subtela;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFD2D0EE226E4AB700B0BCF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE2196BE0E9479F2DD58E11 /* Pods-Subtela.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VMTSCVT295;
+				INFOPLIST_FILE = Subtela/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacksonchui.Subtela;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFD2D0D5226E4AB600B0BCF9 /* Build configuration list for PBXProject "Subtela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD2D0EA226E4AB700B0BCF9 /* Debug */,
+				CFD2D0EB226E4AB700B0BCF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFD2D0EC226E4AB700B0BCF9 /* Build configuration list for PBXNativeTarget "Subtela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD2D0ED226E4AB700B0BCF9 /* Debug */,
+				CFD2D0EE226E4AB700B0BCF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFD2D0D2226E4AB600B0BCF9 /* Project object */;
+}

@@ -1,0 +1,38 @@
+PODS:
+  - BulletinBoard (3.0.0)
+  - Instructions (1.3.1)
+  - PKRevealController (2.0.6)
+  - Realm (3.14.2):
+    - Realm/Headers (= 3.14.2)
+  - Realm/Headers (3.14.2)
+  - RealmSwift (3.14.2):
+    - Realm (= 3.14.2)
+  - Timepiece (1.3.1)
+
+DEPENDENCIES:
+  - BulletinBoard
+  - Instructions (~> 1.3.1)
+  - PKRevealController
+  - RealmSwift
+  - Timepiece
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BulletinBoard
+    - Instructions
+    - PKRevealController
+    - Realm
+    - RealmSwift
+    - Timepiece
+
+SPEC CHECKSUMS:
+  BulletinBoard: 927f4f9fd22503ceecd71bfc830fd65d5996593a
+  Instructions: 192615408620838c442a526c4a2961ce3d42b6aa
+  PKRevealController: ffb45a16f5a5032ad90a3d16e5cbb0d8e035bd58
+  Realm: 179c6706e3a49dbfe112e572fd3c03d3169bea35
+  RealmSwift: 1797f272fb51c555b764fada32e82159a2c65247
+  Timepiece: c0760ec0e545697d86b80424dcd2b4d5ef66cf51
+
+PODFILE CHECKSUM: 9d052f90ce2290263db54e3267ec5cabdc8a2de9
+
+COCOAPODS: 1.6.1
